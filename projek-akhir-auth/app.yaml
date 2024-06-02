@@ -1,0 +1,13 @@
+runtime: php
+env: flex
+service: auth1
+
+runtime_config:
+  document_root: .
+
+handlers:
+- url: /login.php
+  script: login.php
+
+- url: /.*
+  script: auto

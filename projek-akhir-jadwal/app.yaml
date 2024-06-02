@@ -1,0 +1,13 @@
+runtime: php
+env: flex
+service: jadwal
+
+runtime_config:
+  document_root: .
+
+handlers:
+- url: /index.php
+  script: index.php
+
+- url: /.*
+  script: auto
